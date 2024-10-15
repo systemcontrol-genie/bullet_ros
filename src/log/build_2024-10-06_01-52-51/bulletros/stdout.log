@@ -1,0 +1,23 @@
+running egg_info
+writing ../build/bulletros/bulletros.egg-info/PKG-INFO
+writing dependency_links to ../build/bulletros/bulletros.egg-info/dependency_links.txt
+writing entry points to ../build/bulletros/bulletros.egg-info/entry_points.txt
+writing requirements to ../build/bulletros/bulletros.egg-info/requires.txt
+writing top-level names to ../build/bulletros/bulletros.egg-info/top_level.txt
+reading manifest file '../build/bulletros/bulletros.egg-info/SOURCES.txt'
+writing manifest file '../build/bulletros/bulletros.egg-info/SOURCES.txt'
+running build
+running build_py
+copying bulletros/sub.py -> /home/lim/bullet_ros/src/build/bulletros/build/lib/bulletros
+running install
+running install_lib
+copying /home/lim/bullet_ros/src/build/bulletros/build/lib/bulletros/sub.py -> /home/lim/bullet_ros/src/install/bulletros/lib/python3.10/site-packages/bulletros
+byte-compiling /home/lim/bullet_ros/src/install/bulletros/lib/python3.10/site-packages/bulletros/sub.py to sub.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/lim/bullet_ros/src/install/bulletros/lib/python3.10/site-packages/bulletros-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../build/bulletros/bulletros.egg-info to /home/lim/bullet_ros/src/install/bulletros/lib/python3.10/site-packages/bulletros-0.0.0-py3.10.egg-info
+running install_scripts
+Installing pub script to /home/lim/bullet_ros/src/install/bulletros/lib/bulletros
+Installing sub script to /home/lim/bullet_ros/src/install/bulletros/lib/bulletros
+writing list of installed files to '/home/lim/bullet_ros/src/build/bulletros/install.log'

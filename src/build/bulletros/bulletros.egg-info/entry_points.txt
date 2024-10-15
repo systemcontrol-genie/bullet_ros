@@ -1,0 +1,3 @@
+[console_scripts]
+pub = bulletros.pub:main
+sub = bulletros.sub:main

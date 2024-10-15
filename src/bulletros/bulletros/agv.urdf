@@ -1,0 +1,156 @@
+<?xml version="1.0" ?>
+<robot name="agv_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  
+  <!-- Define colors -->
+  <material name="Black">
+    <color rgba="0.0 0.0 0.0 1.0"/>
+  </material>
+  <material name="Gray">
+    <color rgba="0.5 0.5 0.5 1.0"/>
+  </material>
+
+  <!-- BASE-FOOTPRINT -->
+  <link name="base_footprint">
+    <inertial>
+      <mass value="0.1"/>
+      <origin xyz="0 0 0"/>
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <box size="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <!-- BASE-LINK (Main body) -->
+  <link name="base_link">
+    <inertial>
+      <mass value="5"/>
+      <origin xyz="0 0 0"/>
+      <inertia ixx="0.0282916666667" ixy="0" ixz="0" iyy="0.0282916666667" iyz="0" izz="0.05625"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <box size="0.6 0.4 0.2"/> <!-- Main body size -->
+      </geometry>
+      <material name="Gray"/>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <box size="0.6 0.4 0.2"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- WHEELS -->
+  <!-- Front Right Wheel -->
+  <link name="front_right_wheel">
+    <inertial>
+      <mass value="0.5"/>
+      <origin xyz="0 0 0"/>
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.04" length="0.02"/> <!-- Wheel radius 0.04m -->
+      </geometry>
+      <material name="Black"/>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.04" length="0.02"/>
+      </geometry>
+    </collision>
+  </link>
+  
+  <!-- Front Left Wheel -->
+  <link name="front_left_wheel">
+    <inertial>
+      <mass value="0.5"/>
+      <origin xyz="0 0 0"/>
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.04" length="0.02"/> <!-- Wheel radius 0.04m -->
+      </geometry>
+      <material name="Black"/>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.04" length="0.02"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- JOINTS -->
+  <!-- Right wheel joint -->
+  <joint name="front_right_wheel_joint" type="continuous">
+    <origin xyz="0.3 -0.2 0.1" rpy="0 0 0"/> <!-- Adjust position based on design -->
+    <parent link="base_link"/>
+    <child link="front_right_wheel"/>
+    <axis xyz="0 1 0"/> <!-- Rotation along y-axis -->
+  </joint>
+
+  <!-- Left wheel joint -->
+  <joint name="front_left_wheel_joint" type="continuous">
+    <origin xyz="0.3 0.2 0.1" rpy="0 0 0"/> <!-- Adjust position based on design -->
+    <parent link="base_link"/>
+    <child link="front_left_wheel"/>
+    <axis xyz="0 1 0"/> <!-- Rotation along y-axis -->
+  </joint>
+
+  <!-- Transmission for wheels -->
+  <transmission name="front_right_wheel_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="front_right_wheel_joint"/>
+    <actuator name="front_right_wheel_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+
+  <transmission name="front_left_wheel_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="front_left_wheel_joint"/>
+    <actuator name="front_left_wheel_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+
+  <!-- Casters for balance -->
+  <link name="rear_caster_wheel">
+    <inertial>
+      <mass value="0.2"/>
+      <origin xyz="0 0 0"/>
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.025"/>
+      </geometry>
+      <material name="Black"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.025"/>
+      </geometry>
+    </collision>
+  </link>
+  
+  <joint name="rear_caster_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="rear_caster_wheel"/>
+    <origin xyz="-0.3 0 0" rpy="0 0 0"/> <!-- Adjust position -->
+  </joint>
+  
+</robot>

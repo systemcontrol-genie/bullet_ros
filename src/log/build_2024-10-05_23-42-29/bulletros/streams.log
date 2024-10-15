@@ -1,0 +1,26 @@
+[1.740s] Invoking command in '/home/lim/bullet_ros/src/bulletros': PYTHONPATH=/home/lim/bullet_ros/src/build/bulletros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lim/bullet_ros/src/install/bulletros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/bulletros build --build-base /home/lim/bullet_ros/src/build/bulletros/build install --record /home/lim/bullet_ros/src/build/bulletros/install.log --single-version-externally-managed install_data
+[2.590s] running egg_info
+[2.652s] writing ../build/bulletros/bulletros.egg-info/PKG-INFO
+[2.698s] writing dependency_links to ../build/bulletros/bulletros.egg-info/dependency_links.txt
+[2.836s] writing entry points to ../build/bulletros/bulletros.egg-info/entry_points.txt
+[2.935s] writing requirements to ../build/bulletros/bulletros.egg-info/requires.txt
+[2.980s] writing top-level names to ../build/bulletros/bulletros.egg-info/top_level.txt
+[3.078s] listing git files failed - pretending there aren't any
+[3.079s] reading manifest file '../build/bulletros/bulletros.egg-info/SOURCES.txt'
+[3.080s] writing manifest file '../build/bulletros/bulletros.egg-info/SOURCES.txt'
+[3.080s] running build
+[3.080s] running build_py
+[3.080s] copying bulletros/pub.py -> /home/lim/bullet_ros/src/build/bulletros/build/lib/bulletros
+[3.081s] running install
+[3.086s] running install_lib
+[3.150s] copying /home/lim/bullet_ros/src/build/bulletros/build/lib/bulletros/pub.py -> /home/lim/bullet_ros/src/install/bulletros/lib/python3.10/site-packages/bulletros
+[3.150s] byte-compiling /home/lim/bullet_ros/src/install/bulletros/lib/python3.10/site-packages/bulletros/pub.py to pub.cpython-310.pyc
+[3.151s] running install_data
+[3.151s] running install_egg_info
+[3.215s] removing '/home/lim/bullet_ros/src/install/bulletros/lib/python3.10/site-packages/bulletros-0.0.0-py3.10.egg-info' (and everything under it)
+[3.215s] Copying ../build/bulletros/bulletros.egg-info to /home/lim/bullet_ros/src/install/bulletros/lib/python3.10/site-packages/bulletros-0.0.0-py3.10.egg-info
+[3.216s] running install_scripts
+[3.345s] Installing pub script to /home/lim/bullet_ros/src/install/bulletros/lib/bulletros
+[3.346s] Installing sub script to /home/lim/bullet_ros/src/install/bulletros/lib/bulletros
+[3.346s] writing list of installed files to '/home/lim/bullet_ros/src/build/bulletros/install.log'
+[3.374s] Invoked command in '/home/lim/bullet_ros/src/bulletros' returned '0': PYTHONPATH=/home/lim/bullet_ros/src/build/bulletros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lim/bullet_ros/src/install/bulletros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/bulletros build --build-base /home/lim/bullet_ros/src/build/bulletros/build install --record /home/lim/bullet_ros/src/build/bulletros/install.log --single-version-externally-managed install_data

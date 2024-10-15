@@ -1,0 +1,65 @@
+[0.000000] (-) TimerEvent: {}
+[0.000620] (bulletros) JobQueued: {'identifier': 'bulletros', 'dependencies': OrderedDict()}
+[0.000763] (bulletros) JobStarted: {'identifier': 'bulletros'}
+[0.100027] (-) TimerEvent: {}
+[0.200286] (-) TimerEvent: {}
+[0.300546] (-) TimerEvent: {}
+[0.400860] (-) TimerEvent: {}
+[0.501112] (-) TimerEvent: {}
+[0.601362] (-) TimerEvent: {}
+[0.701615] (-) TimerEvent: {}
+[0.801880] (-) TimerEvent: {}
+[0.902138] (-) TimerEvent: {}
+[1.002395] (-) TimerEvent: {}
+[1.102650] (-) TimerEvent: {}
+[1.202912] (-) TimerEvent: {}
+[1.303173] (-) TimerEvent: {}
+[1.403430] (-) TimerEvent: {}
+[1.503694] (-) TimerEvent: {}
+[1.603953] (-) TimerEvent: {}
+[1.704214] (-) TimerEvent: {}
+[1.804479] (-) TimerEvent: {}
+[1.882362] (bulletros) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/bulletros', 'build', '--build-base', '/home/lim/bullet_ros/src/build/bulletros/build', 'install', '--record', '/home/lim/bullet_ros/src/build/bulletros/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/lim/bullet_ros/src/bulletros', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'lim', 'LC_TIME': 'ko_KR.UTF-8', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:', 'HOME': '/home/lim', 'OLDPWD': '/home/lim/bullet_ros', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '1500', 'SYSTEMD_EXEC_PID': '1737', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', '_colcon_cd_root': '/opt/ros/humble/', 'COLCON_PREFIX_PATH': '/home/lim/bullet_ros/src/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'lim', 'JOURNAL_STREAM': '8:16443', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'lim', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/home/lim/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/lim:@/tmp/.ICE-unix/1711,unix/lim:/tmp/.ICE-unix/1711', 'INVOCATION_ID': '30b6488f160848c79e60892bb86f09c7', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/lim/bullet_ros/src/install/bulletros:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:4a7f689d-d862-411a-bece-780476adb934', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/lim/bullet_ros/src/build/bulletros', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/lim/bullet_ros/src/build/bulletros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lim/bullet_ros/src/install/bulletros/lib/python3.10/site-packages:/home/lim/bullet_ros/src/install/bulletros/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/PythonAPI/carla/dist/carla-0.9.15-py3.10-linux-x86_64.egg', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[1.904566] (-) TimerEvent: {}
+[2.004832] (-) TimerEvent: {}
+[2.105112] (-) TimerEvent: {}
+[2.205366] (-) TimerEvent: {}
+[2.305629] (-) TimerEvent: {}
+[2.405892] (-) TimerEvent: {}
+[2.506161] (-) TimerEvent: {}
+[2.606431] (-) TimerEvent: {}
+[2.706703] (-) TimerEvent: {}
+[2.806975] (-) TimerEvent: {}
+[2.854638] (bulletros) StdoutLine: {'line': b'running egg_info\n'}
+[2.907089] (-) TimerEvent: {}
+[2.926550] (bulletros) StdoutLine: {'line': b'writing ../build/bulletros/bulletros.egg-info/PKG-INFO\n'}
+[2.980753] (bulletros) StdoutLine: {'line': b'writing dependency_links to ../build/bulletros/bulletros.egg-info/dependency_links.txt\n'}
+[3.007201] (-) TimerEvent: {}
+[3.107449] (-) TimerEvent: {}
+[3.143311] (bulletros) StdoutLine: {'line': b'writing entry points to ../build/bulletros/bulletros.egg-info/entry_points.txt\n'}
+[3.207564] (-) TimerEvent: {}
+[3.257970] (bulletros) StdoutLine: {'line': b'writing requirements to ../build/bulletros/bulletros.egg-info/requires.txt\n'}
+[3.307658] (-) TimerEvent: {}
+[3.311055] (bulletros) StdoutLine: {'line': b'writing top-level names to ../build/bulletros/bulletros.egg-info/top_level.txt\n'}
+[3.407776] (-) TimerEvent: {}
+[3.414258] (bulletros) StderrLine: {'line': b"listing git files failed - pretending there aren't any\n"}
+[3.414977] (bulletros) StdoutLine: {'line': b"reading manifest file '../build/bulletros/bulletros.egg-info/SOURCES.txt'\n"}
+[3.415835] (bulletros) StdoutLine: {'line': b"writing manifest file '../build/bulletros/bulletros.egg-info/SOURCES.txt'\n"}
+[3.416046] (bulletros) StdoutLine: {'line': b'running build\n'}
+[3.416165] (bulletros) StdoutLine: {'line': b'running build_py\n'}
+[3.416471] (bulletros) StdoutLine: {'line': b'running install\n'}
+[3.421481] (bulletros) StdoutLine: {'line': b'running install_lib\n'}
+[3.488024] (bulletros) StdoutLine: {'line': b'running install_data\n'}
+[3.488258] (bulletros) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.507875] (-) TimerEvent: {}
+[3.554204] (bulletros) StdoutLine: {'line': b"removing '/home/lim/bullet_ros/src/install/bulletros/lib/python3.10/site-packages/bulletros-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[3.554525] (bulletros) StdoutLine: {'line': b'Copying ../build/bulletros/bulletros.egg-info to /home/lim/bullet_ros/src/install/bulletros/lib/python3.10/site-packages/bulletros-0.0.0-py3.10.egg-info\n'}
+[3.555401] (bulletros) StdoutLine: {'line': b'running install_scripts\n'}
+[3.608000] (-) TimerEvent: {}
+[3.689022] (bulletros) StdoutLine: {'line': b'Installing pub script to /home/lim/bullet_ros/src/install/bulletros/lib/bulletros\n'}
+[3.689243] (bulletros) StdoutLine: {'line': b'Installing sub script to /home/lim/bullet_ros/src/install/bulletros/lib/bulletros\n'}
+[3.689533] (bulletros) StdoutLine: {'line': b"writing list of installed files to '/home/lim/bullet_ros/src/build/bulletros/install.log'\n"}
+[3.708126] (-) TimerEvent: {}
+[3.717337] (bulletros) CommandEnded: {'returncode': 0}
+[3.726591] (bulletros) JobEnded: {'identifier': 'bulletros', 'rc': 0}
+[3.727182] (-) EventReactorShutdown: {}

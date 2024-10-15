@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+../build/bulletros/bulletros.egg-info/PKG-INFO
+../build/bulletros/bulletros.egg-info/SOURCES.txt
+../build/bulletros/bulletros.egg-info/dependency_links.txt
+../build/bulletros/bulletros.egg-info/entry_points.txt
+../build/bulletros/bulletros.egg-info/requires.txt
+../build/bulletros/bulletros.egg-info/top_level.txt
+../build/bulletros/bulletros.egg-info/zip-safe
+bulletros/__init__.py
+bulletros/pub.py
+bulletros/sub.py
+resource/bulletros
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

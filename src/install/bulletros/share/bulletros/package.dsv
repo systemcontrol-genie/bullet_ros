@@ -1,0 +1,6 @@
+source;share/bulletros/hook/pythonpath.ps1
+source;share/bulletros/hook/pythonpath.dsv
+source;share/bulletros/hook/pythonpath.sh
+source;share/bulletros/hook/ament_prefix_path.ps1
+source;share/bulletros/hook/ament_prefix_path.dsv
+source;share/bulletros/hook/ament_prefix_path.sh
